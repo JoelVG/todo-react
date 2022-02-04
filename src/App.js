@@ -1,23 +1,16 @@
 import React from 'react';
 import './App.css';
-import { Task } from './components/Task/task';
-
-const DATA = [
-  {name: 'Tarea 1', completed: true, steps: []},
-  {name: 'Tarea 2', completed: false, steps: [{name: 'step 1', completed: false}]},
-  {name: 'Tarea 3', completed: false, steps: [{name: 'step 1', completed: false}, {name: 'step 2', completed: false}]}
-]
+import { ToDoList } from './modules/ToDo';
+import { Text } from './components/Text/Text';
 
 function App() {
   return (
     <div className="App container">
-      <TestClassTODO nombre={'Juan'} />
-      <TestClassTODO nombre={'Pepe'} />
-      <TestClassTODO nombre={'Ramon'} />
-      <TestFunction nombre={'Ramiro'}/>
       <div>
-        Hola  esta es la primera APP, como esta?
-        {DATA.map((task) => <Task item={task}/>)}
+        <Text text={'To Do List Project'} type="title"/>
+      </div>
+      <div>
+        <ToDoList />
       </div>
     </div>
   );
