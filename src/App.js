@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import { Task } from './components/Task/task';
-import TestClassTODO, {TestFunction} from './components/test';
 
 const DATA = [
   {name: 'Tarea 1', completed: true, steps: []},
